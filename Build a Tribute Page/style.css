@@ -41,22 +41,22 @@ body {
   padding: 0 15px;
 }
 
-h3 {
+#tribute-info h3 {
   margin: 60px 0px;
 }
 
-ul {
+.information {
   max-width: 910px;
   margin: 0 auto 50px auto;
   text-align: left;
   line-height: 1.6;
 }
 
-ul li {
+.information li {
   margin: 25px 0;
 }
 
-section p {
+.quote p {
   font-style: italic;
   max-width: 920px;
   margin: auto;
