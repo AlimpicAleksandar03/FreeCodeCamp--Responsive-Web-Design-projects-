@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0px;
+}
+
+header img {
+  max-width: 350px;
+}
+
+.navigation {
+  display: flex;
+  width: 35vw;
+  justify-content: space-around;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+}
+
+.form-section {
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#email {
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+.submit {
+  min-width: 150px;
+  margin: 0 auto;
+  border: none;
+  background-color: #f1c40f;
+  padding: 11px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.features {
+  margin-top: 40px;
+}
+
+.features .grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0px;
+}
+
+/* Font awesome */
+.fas {
+  color: darkorange;
+  max-width: 60px;
+}
+
+.description {
+  text-align: left;
+}
+
+.video-section {
+  text-align: center;
+}
+
+.pricing {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  width: calc(100% / 3);
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product .product-title {
+  background-color: lightgrey;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.btn {
+  min-width: 100px;
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  /* max-width: 100%; */
+  background-color: lightgrey;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-menu li {
+  padding: 20px 20px 0px 20px;
+}
+
+.copyright {
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 860px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navigation {
+    flex-direction: column;
+    min-width: 200px;
+    text-align: center;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .form-section h2 {
+    text-align: center;
+  }
+}
