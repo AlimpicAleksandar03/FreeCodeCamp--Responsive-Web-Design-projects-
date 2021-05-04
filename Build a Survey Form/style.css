@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  margin: 3.5rem auto;
+  max-width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+#description {
+  margin-top: -10px;
+}
+
+.header-main {
+  margin-bottom: 6rem;
+}
+
+#survey-form {
+  background-color: rgba(27, 27, 50, 0.8);
+  border-radius: 8px;
+}
+
+.form-group {
+  text-align: left;
+  padding: 15px 50px;
+}
+
+#name-label {
+  margin-top: 30px;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+select {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+#name-label,
+#email-label,
+#number-label {
+  margin-bottom: 5px;
+}
+
+#comments {
+  min-height: 120px;
+  width: 100%;
+  padding: 14px 20px;
+  resize: vertical;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 14px 20px;
+  text-align: center;
+  cursor: pointer;
+  background: #37af65;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Desktop size */
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Medium devices size */
+@media screen and (max-width: 920px) {
+  .container {
+    max-width: 540px;
+  }
+}
