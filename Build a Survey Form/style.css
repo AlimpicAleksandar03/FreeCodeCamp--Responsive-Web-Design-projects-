@@ -69,13 +69,13 @@ body::before {
   border-radius: 5px;
 }
 
-label {
+.form-group label {
   display: flex;
   align-items: center;
 }
 
-input[type='checkbox'],
-input[type='radio'] {
+.form-group input[type='checkbox'],
+.form-group input[type='radio'] {
   display: block;
   margin-right: 10px;
   width: 20px;
@@ -96,7 +96,7 @@ input[type='radio'] {
   border-radius: 5px;
 }
 
-button {
+#submit {
   width: 100%;
   padding: 14px 20px;
   text-align: center;
