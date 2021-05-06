@@ -38,11 +38,18 @@ body {
 
 .section {
   min-width: 100%;
-  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.welcome-section {
+  padding: 290px 0px;
+}
+
+.contact-section {
+  padding: 200px 0px;
 }
 
 .welcome-section {
@@ -61,7 +68,6 @@ body {
 
 .projects-section {
   background-color: #45567d;
-  height: 140vh;
 }
 
 .section h2 {
@@ -94,7 +100,7 @@ body {
 
 img {
   width: 100%;
-  height: 83%;
+  height: 80%;
 }
 
 .show-all {
@@ -111,7 +117,6 @@ img {
 }
 
 .contact-section {
-  height: 80vh;
   background: #3a3d40;
   text-align: center;
 }
@@ -162,14 +167,6 @@ img {
 }
 
 @media (max-width: 1092px) {
-  .projects-section {
-    height: 220vh;
-  }
-
-  .projects-section h2 {
-    margin-top: -70px;
-  }
-
   .section h1,
   .section h2 {
     font-size: 40px;
@@ -190,20 +187,19 @@ img {
     flex-basis: 100%;
   }
 
-  .projects-section {
-    height: 500vh;
-  }
-
-  .section h1,
   .section h2 {
-    font-size: 25px;
+    font-size: 48px;
   }
 
   .main-header {
     justify-content: center;
   }
 
-  .navigation li {
-    width: 100%;
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer p {
+    margin-bottom: 40px;
   }
 }
