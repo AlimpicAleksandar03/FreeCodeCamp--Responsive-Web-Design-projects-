@@ -31,6 +31,11 @@ body {
   padding: 20px 40px;
 }
 
+.navigation ul li:hover {
+  background-color: #45567d;
+  cursor: pointer;
+}
+
 .navigation ul li a {
   text-decoration: none;
   color: white;
@@ -83,12 +88,12 @@ body {
   flex-flow: wrap;
 }
 
-.projects-tile {
+.project-tile {
   padding: 10px 15px;
   flex-basis: calc(100% / 3);
 }
 
-.projects-tile p {
+.project-tile p {
   background: #3a3d40;
   text-align: center;
   padding: 20px;
@@ -171,7 +176,7 @@ img {
     font-size: 40px;
   }
 
-  .projects-tile {
+  .project-tile {
     flex-basis: 50%;
   }
 
@@ -186,7 +191,7 @@ img {
     text-align: center;
   }
 
-  .projects-tile {
+  .project-tile {
     flex-basis: 100%;
   }
 
